@@ -1,42 +1,89 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faFileAlt,
+  faHome,
+  faAddressBook,
+} from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
+import headerStyles from "./header.module.scss"
+
+const Header = () => (
+  <header>
+    <div className={headerStyles.header}>
+      <div className={headerStyles.titleBox}>
+        <h1>
+          <Link className={headerStyles.title} to="/">
+            Nicolas Burbinski
+          </Link>
+        </h1>
+        <p>Full Stack Developer</p>
+      </div>
+
+      <ul className={headerStyles.navList}>
+        <li>
+          <div className={headerStyles.navItemTitle}>Home</div>
+          <Link className={headerStyles.navItem} to="/">
+            <FontAwesomeIcon
+              className={headerStyles.headerLink}
+              icon={faHome}
+              size="3x"
+            />
+          </Link>
+        </li>
+        <li>
+          <p className={headerStyles.navItemTitle}>Resume</p>
+          <Link className={headerStyles.navItem} to="/resume">
+            <FontAwesomeIcon
+              className={headerStyles.headerLink}
+              icon={faFileAlt}
+              size="3x"
+            />
+          </Link>
+        </li>
+        <li>
+          <a
+            className={headerStyles.navItem}
+            href="https://linkedin.com/in/nburbinski"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className={headerStyles.headerLink}
+              icon={faLinkedin}
+              size="3x"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            className={headerStyles.navItem}
+            href="https://github.com/nburbinski"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className={headerStyles.headerLink}
+              icon={faGithub}
+              size="3x"
+            />
+          </a>
+        </li>
+        <li>
+          <Link className={headerStyles.navItem} to="/contact">
+            <FontAwesomeIcon
+              className={headerStyles.headerLink}
+              icon={faAddressBook}
+              size="3x"
+            />
+          </Link>
+        </li>
+      </ul>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
