@@ -7,6 +7,10 @@ import layoutStyles from "./layout.module.scss"
 const Layout = ({ children }) => {
   return (
     <div className={layoutStyles.container}>
+      <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
+        rel="stylesheet"
+      />
       <Header />
       <div className={layoutStyles.content}>
         <main>{children}</main>

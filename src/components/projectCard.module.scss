@@ -1,50 +1,46 @@
-a {
-  text-decoration: none;
-}
+$color-primary: #00b9ae;
 
-.project-card {
-  padding: 1em;
-  background-color: #fafafa;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease-in-out;
-  border-radius: 10px;
-  height: 200px;
-  text-align: center;
+.projectCard {
+  padding: 1.5rem;
+  background-color: $color-primary;
 
-  &:hover {
-    transform: rotateY(180deg);
+  margin: 3rem 5rem;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 8px 8px 18px -1px rgba(3, 49, 46, 0.55);
+  box-shadow: 8px 8px 18px -1px rgba(3, 49, 46, 0.55);
+
+  a {
+    background-color: #f49f0a;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    text-decoration: none;
+    margin: 5rem 1rem inherit inherit;
+
+    -webkit-box-shadow: 5px 2px 11px 2px rgba(0, 0, 0, 0.26);
+    box-shadow: 5px 2px 11px 2px rgba(0, 0, 0, 0.26);
+  }
+
+  .link {
+    margin-right: 1rem;
   }
 }
 
-.front {
-  backface-visibility: hidden;
-
-  h1 {
-    background-color: #fafafa;
-    color: #574b90;
-    font-weight: bold;
-  }
-}
-
-.back {
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-}
-
-.links {
-  display: flex;
-  background-color: #fafafa;
-  color: #574b90;
-}
-
-.link {
-  padding: 1rem;
-  background-color: #303a52;
-  margin-right: 1rem;
-  border-radius: 10px;
-  margin-bottom: 2em;
-
-  &:hover {
-    background-color: darken(#303a52, 10%);
+.techandlinks {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    li {
+      font-size: 80%;
+      list-style: none;
+      background-color: #c9fbff;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 10px;
+      text-align: center;
+    }
   }
 }

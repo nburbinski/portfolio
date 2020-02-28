@@ -7,10 +7,7 @@ import Projects from "../components/projects"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Projects</h1>
-    <div>
-      <Projects />
-    </div>
+    <Projects />
   </Layout>
 )
 

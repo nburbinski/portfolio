@@ -1,6 +1,20 @@
+h2 {
+  font-size: 4rem;
+}
+
 .projects-container {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-  margin: 1rem;
+  grid-template-columns: 10% 90%;
+  max-width: 1000px;
+  margin-left: 25%;
+
+  .title {
+    position: -webkit-sticky;
+    top: 1rem;
+    h2 {
+      margin-left: -2em;
+      position: fixed;
+    }
+  }
 }

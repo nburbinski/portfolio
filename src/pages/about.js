@@ -7,7 +7,10 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <h1>About</h1>
-    <p>assdfasdf</p>
+    <p>
+      Hi, I'm Nicolas Burbinski, a Full-Stack Developer and recent graduate from
+      the University of Central Florida!{" "}
+    </p>
   </Layout>
 )
 export default AboutPage

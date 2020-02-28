@@ -1,20 +1,31 @@
-* {
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
+$color-primary: #00b9ae;
+$color-secondary: #03312e;
+
+body {
   margin: 0;
-  font-family: "Montserrat";
-  background-color: #574b90;
-  color: #fafafa;
+  padding: 0;
 }
 
 .container {
+  font-family: Spartan;
   margin: 0 auto;
-  max-width: 1000px;
   padding: 1rem;
 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  background-color: #ffffff;
+  color: $color-secondary;
 }
 
 .content {
   flex-grow: 1;
+}
+
+h2 {
+  font-size: 150%;
 }

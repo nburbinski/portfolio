@@ -1,6 +1,6 @@
 import ProjectCard from "./projectCard"
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import projectStyles from "./projects.module.scss"
 
@@ -42,7 +42,7 @@ const Projects = () => {
       ],
       Demo: "http://plantcity.herokuapp.com/",
       Repo: "https://github.com/nburbinski/plant_city",
-      img: "",
+      imgs: "react-icon.png",
     },
     {
       Title: "UCF Movie Night",
@@ -59,6 +59,7 @@ const Projects = () => {
       ],
       Demo: "https://ucfmovietime.herokuapp.com/",
       Repo: "https://github.com/nburbinski/ucf_movie_time",
+      imgs: [],
     },
     {
       Title: "Grocery Time",
@@ -67,6 +68,7 @@ const Projects = () => {
       Tech: ["PostgreSQL", "Express", "ReactJS", "NodeJS", "SASS"],
       Demo: "",
       Repo: "",
+      imgs: [],
     },
     {
       Title: "Portfolio",
@@ -74,14 +76,27 @@ const Projects = () => {
       Tech: ["ReactJS", "GatsbyJS", "SASS"],
       Demo: "",
       Repo: "",
+      imgs: [],
     },
   ]
 
   return (
     <div className={projectStyles.projectsContainer}>
-      {projects.map(project => {
-        return <ProjectCard key={project.Title} project={project} />
-      })}
+      <div className={projectStyles.title}>
+        {" "}
+        <h2> Projects </h2>
+      </div>
+      <div>
+        {projects.map(project => {
+          return (
+            <ProjectCard
+              id={project.Title}
+              key={project.Title}
+              project={project}
+            />
+          )
+        })}
+      </div>
     </div>
   )
 }
