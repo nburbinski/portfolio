@@ -13,8 +13,11 @@ h2 {
     position: -webkit-sticky;
     top: 1rem;
     h2 {
-      margin-left: -2em;
+      color: #ffffff;
+      margin-left: -2.5em;
       position: fixed;
+
+      text-shadow: 2px 2px 2px #cecece;
     }
   }
 }

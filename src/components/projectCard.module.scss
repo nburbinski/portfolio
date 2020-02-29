@@ -2,7 +2,8 @@ $color-primary: #00b9ae;
 
 .projectCard {
   padding: 1.5rem;
-  background-color: $color-primary;
+
+  background-color: lighten(#fffde0, 1%);
 
   margin: 3rem 5rem;
   border-radius: 5px;
@@ -11,15 +12,16 @@ $color-primary: #00b9ae;
   box-shadow: 8px 8px 18px -1px rgba(3, 49, 46, 0.55);
 
   a {
-    background-color: #f49f0a;
-    color: #000000;
+    background-color: lighten(#234099, 20%);
+    font-size: 120%;
+    justify-content: right;
+    position: relative;
+    left: 32rem;
+    color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 10%;
     text-decoration: none;
     margin: 5rem 1rem inherit inherit;
-
-    -webkit-box-shadow: 5px 2px 11px 2px rgba(0, 0, 0, 0.26);
-    box-shadow: 5px 2px 11px 2px rgba(0, 0, 0, 0.26);
   }
 
   .link {
@@ -35,7 +37,9 @@ $color-primary: #00b9ae;
     li {
       font-size: 80%;
       list-style: none;
-      background-color: #c9fbff;
+      background-color: lighten(#234099, 10%);
+      color: white;
+      font-weight: bold;
       padding: 0.5rem;
       margin-right: 0.5rem;
       margin-bottom: 0.5rem;
