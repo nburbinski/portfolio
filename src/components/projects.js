@@ -83,10 +83,23 @@ const Projects = () => {
   return (
     <div className={projectStyles.projectsContainer}>
       <div className={projectStyles.title}>
-        {" "}
         <h2> Projects </h2>
+        <ol>
+          <li>
+            <Link to="/#Plant Trackr">Plant Trackr</Link>
+          </li>
+          <li>
+            <Link to="/#UCF Movie Night">UCF Movie Night</Link>
+          </li>
+          <li>
+            <Link to="/#Grocery Time">Grocery Time</Link>
+          </li>
+          <li>
+            <Link to="/#Portfolio">Portfolio</Link>
+          </li>
+        </ol>
       </div>
-      <div>
+      <div className={projectStyles.projects}>
         {projects.map(project => {
           return (
             <ProjectCard

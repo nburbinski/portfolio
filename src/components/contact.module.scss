@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 500px;
+  border-radius: 5px;
+
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: lighten(#fffde0, 1%);
+
+  input {
+    padding: 0.5rem 1rem;
+    border-style: hidden;
+    margin-bottom: 0.5rem;
+    font-size: 100%;
+    box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
+  }
+
+  button {
+    background-color: lighten(#234099, 20%);
+    color: #ffffff;
+    padding: 0.5rem;
+    width: 20%;
+    border-style: hidden;
+    border-radius: 5px;
+    font-size: 110%;
+    letter-spacing: 2px;
+    margin-top: 0.75rem;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+}

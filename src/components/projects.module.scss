@@ -5,17 +5,40 @@ h2 {
 .projects-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin-left: 25%;
 
   .title {
     position: -webkit-sticky;
-    top: 1rem;
+    top: 25%;
+    margin-left: -10%;
+    position: fixed;
+
+    ol {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: 1rem;
+
+        a {
+          text-decoration: none;
+          color: black;
+          padding: 0.5rem 2rem 0.5rem 0.5rem;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+
     h2 {
       color: #ffffff;
-      margin-left: -10%;
-      position: fixed;
+
       font-size: 300%;
 
       text-shadow: 2px 2px 2px #cecece;
