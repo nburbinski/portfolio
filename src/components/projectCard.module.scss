@@ -8,15 +8,21 @@ $color-primary: #00b9ae;
   margin: 3rem 5rem;
   border-radius: 5px;
 
-  -webkit-box-shadow: 8px 8px 18px -1px rgba(3, 49, 46, 0.55);
-  box-shadow: 8px 8px 18px -1px rgba(3, 49, 46, 0.55);
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+
+  box-sizing: border-box;
+
+  h1 {
+    margin-top: 0.5rem;
+    font-size: 150%;
+    font-weight: bold;
+  }
 
   a {
     background-color: lighten(#234099, 20%);
     font-size: 120%;
-    justify-content: right;
     position: relative;
-    left: 32rem;
+    left: 70%;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 10%;
@@ -25,7 +31,9 @@ $color-primary: #00b9ae;
   }
 
   .linkRepo {
-    background-color: lighten(#234099, 40%);
+    background-color: lighten(#fffde0, 1%);
+    color: lighten(#234099, 20%);
+    font-weight: bold;
 
     margin-left: 1rem;
   }
@@ -47,6 +55,37 @@ $color-primary: #00b9ae;
       margin-bottom: 0.5rem;
       border-radius: 10px;
       text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .projectCard {
+    a {
+      left: 0%;
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .techandlinks {
+    ul {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .projectCard {
+    margin: 1rem 1rem;
+  }
+  .techandlinks {
+    ul {
+      grid-template-columns: 1fr;
     }
   }
 }

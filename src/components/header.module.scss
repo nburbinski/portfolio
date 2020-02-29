@@ -42,3 +42,16 @@
     margin-right: 1rem;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .navList {
+    width: 80%;
+    padding-left: 0;
+    margin-left: 0.35rem;
+
+    .navItem {
+      padding-left: 0;
+      margin-right: 0.5rem;
+    }
+  }
+}
