@@ -4,14 +4,19 @@ import contactStyles from "./contact.module.scss"
 
 const ContactForm = () => {
   return (
-    <form className={contactStyles.form}>
+    <form
+      className={contactStyles.form}
+      name="contact"
+      method="POST"
+      data-netlify="true"
+    >
       <h3>Contact ME</h3>
       Name
       <input type="text" placeholder="Enter name here..."></input>
       Email
       <input type="text" placeholder="Enter email here..."></input>
       Message
-      <input type="textbox" placeholder="Enter message here..."></input>
+      <textarea rows="5" placeholder="Enter message here..."></textarea>
       <button type="submit">Submit</button>
     </form>
   )

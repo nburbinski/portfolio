@@ -2,11 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Resume from "../components/Resume"
+
 const resume = () => (
   <Layout>
     <SEO title="Resume" />
-    <h1>Resume</h1>
-    <p>This is a resume</p>
+    <Resume />
   </Layout>
 )
 
