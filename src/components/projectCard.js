@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
               href={project.Demo}
               target="_blank"
               rel="noopener noreferrer"
-              className={projectCardStyles.link}
+              className={projectCardStyles.linkDemo}
             >
               Demo
             </a>
@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
               href={project.Repo}
               target="_blank"
               rel="noopener noreferrer"
-              className={projectCardStyles.link}
+              className={projectCardStyles.linkRepo}
             >
               Repo
             </a>

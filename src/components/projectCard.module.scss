@@ -24,8 +24,10 @@ $color-primary: #00b9ae;
     margin: 5rem 1rem inherit inherit;
   }
 
-  .link {
-    margin-right: 1rem;
+  .linkRepo {
+    background-color: lighten(#234099, 40%);
+
+    margin-left: 1rem;
   }
 }
 
@@ -37,8 +39,8 @@ $color-primary: #00b9ae;
     li {
       font-size: 80%;
       list-style: none;
-      background-color: lighten(#234099, 10%);
-      color: white;
+      background-color: lighten(#234099, 50%);
+      color: rgb(27, 22, 95);
       font-weight: bold;
       padding: 0.5rem;
       margin-right: 0.5rem;
