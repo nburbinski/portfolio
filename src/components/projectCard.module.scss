@@ -26,6 +26,10 @@ $color-primary: #00b9ae;
     border-radius: 10%;
     text-decoration: none;
     margin: 5rem 1rem inherit inherit;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   .linkRepo {

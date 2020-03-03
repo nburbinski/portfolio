@@ -5,7 +5,7 @@ import projectCardStyles from "./projectCard.module.scss"
 const ProjectCard = ({ project }) => {
   return (
     <>
-      <div className={projectCardStyles.projectCard}>
+      <div className={projectCardStyles.projectCard} id={project.Title}>
         <h1>{project.Title}</h1>
         <div>{project.Description}</div>
         <div className={projectCardStyles.techandlinks}>

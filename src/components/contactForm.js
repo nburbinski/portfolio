@@ -3,12 +3,16 @@ import React from "react"
 import contactStyles from "./contact.module.scss"
 
 const ContactForm = () => {
+  const handleSubmit = e => {
+    e.preventDefault()
+  }
   return (
     <form
       className={contactStyles.form}
       name="contact"
       method="POST"
       data-netlify="true"
+      onSubmit={e => handleSubmit(e)}
     >
       <h3>Contact ME</h3>
       Name
