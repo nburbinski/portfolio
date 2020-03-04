@@ -1,31 +1,10 @@
 import ProjectCard from "./projectCard"
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import projectStyles from "./projects.module.scss"
 
 const Projects = () => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                Title
-                Description
-              }
-              html
-              fields {
-                slug
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-
   const projects = [
     {
       Title: "Plant Trackr",
