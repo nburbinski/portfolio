@@ -9,6 +9,9 @@ const ContactForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
+    setMessage("")
+    setName("")
+    setEmail("")
   }
   return (
     <form
@@ -16,30 +19,39 @@ const ContactForm = () => {
       name="contact"
       method="POST"
       data-netlify="true"
-      onSubmit={e => handleSubmit(e)}
+      onSubmit={handleSubmit}
     >
       <h3>Contact ME</h3>
-      Name
-      <input
-        type="text"
-        placeholder="Enter name here..."
-        value={name}
-        onChange={target => setName(target.value)}
-      ></input>
-      Email
-      <input
-        type="text"
-        placeholder="Enter email here..."
-        value={email}
-        onChange={target => setEmail(target.value)}
-      ></input>
-      Message
-      <textarea
-        rows="5"
-        placeholder="Enter message here..."
-        value={message}
-        onChange={target => setMessage(target.value)}
-      ></textarea>
+      <label>
+        Name
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter name here..."
+          value={name}
+          onChange={target => setName(target.value)}
+        ></input>
+      </label>
+      <label>
+        Email
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email here..."
+          value={email}
+          onChange={target => setEmail(target.value)}
+        ></input>
+      </label>
+      <label>
+        Message
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Enter message here..."
+          value={message}
+          onChange={target => setMessage(target.value)}
+        ></textarea>
+      </label>
       <button type="submit">Submit</button>
     </form>
   )
