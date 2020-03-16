@@ -9,7 +9,7 @@ const Projects = () => {
     {
       Title: "Plant Trackr",
       Description:
-        "A solution to the impossible and relatable task of managing dozens of household plants, Plant Trackr allows you to keep track of all of your plants needs to stay happy and healthy.",
+        "A solution to the impossible and relatable task of managing dozens of household plants, Plant Trackr allows you to keep track of all of your plants needs to stay happy and healthy. Login: Username: Demo User PW: Demo",
       Tech: [
         "MongoDB",
         "Mongoose",
