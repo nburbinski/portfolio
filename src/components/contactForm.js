@@ -2,26 +2,33 @@ import React, { useState } from "react"
 
 import contactStyles from "./contact.module.scss"
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const ContactForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
   const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
     e.preventDefault()
     setMessage("")
     setName("")
     setEmail("")
   }
   return (
-    <form
-      className={contactStyles.form}
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      onSubmit={handleSubmit}
-    >
-      <h3>Contact ME</h3>
+    <form className={contactStyles.form} onSubmit={handleSubmit}>
+      <h3>Contact Me</h3>
       <label>
         Name
         <input
