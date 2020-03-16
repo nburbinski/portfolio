@@ -53,7 +53,7 @@ const Projects = () => {
       Title: "Grocery Time",
       Description:
         "Picking groceries can be difficult, especially when trying to meal prep. Grocery Time is a web app compiles your groceries whether individually or by recipe and gives you nutritional data through the Spoonacular API",
-      Tech: ["PostgreSQL", "Express", "ReactJS", "NodeJS", "SASS"],
+      Tech: ["PostgreSQL", "Express", "ReactJS", "NodeJS", "SASS", "Redux"],
       Demo: "",
       Repo: "https://github.com/nburbinski/grocerytime",
       imgs: [],
@@ -78,6 +78,9 @@ const Projects = () => {
           </li>
           <li>
             <Link to="/#UCF Movie Night">UCF Movie Night</Link>
+          </li>
+          <li>
+            <Link to="/#Animal Shelter App">Animal Shelter App</Link>
           </li>
           <li>
             <Link to="/#Grocery Time">Grocery Time</Link>
