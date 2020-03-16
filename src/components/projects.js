@@ -63,7 +63,7 @@ const Projects = () => {
       Description: "Portfolio",
       Tech: ["ReactJS", "GatsbyJS", "SASS"],
       Demo: "",
-      Repo: "",
+      Repo: "https://github.com/nburbinski/portfolio",
       imgs: [],
     },
   ]
