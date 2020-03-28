@@ -74,14 +74,16 @@ const Projects = () => {
         <h2> Projects </h2>
         <ol>
           <li>
+            <Link to="/#Animal Shelter App">Animal Shelter App</Link>
+          </li>
+
+          <li>
             <Link to="/#Plant Trackr">Plant Trackr</Link>
           </li>
           <li>
             <Link to="/#UCF Movie Night">UCF Movie Night</Link>
           </li>
-          <li>
-            <Link to="/#Animal Shelter App">Animal Shelter App</Link>
-          </li>
+
           <li>
             <Link to="/#Grocery Time">Grocery Time</Link>
           </li>
