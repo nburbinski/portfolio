@@ -7,7 +7,7 @@
   margin-bottom: 1rem;
 
   a {
-    color: #ffffff;
+    color: lighten($color: #000000, $amount: 20%);
 
     &:hover {
       opacity: 0.75;
@@ -22,6 +22,11 @@
   .title {
     font-size: 150%;
     text-decoration: none;
+  }
+
+  .subTitle {
+    font-weight: bold;
+    color: lighten(#234099, 20%);
   }
 
   p {

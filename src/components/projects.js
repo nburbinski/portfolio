@@ -7,6 +7,15 @@ import projectStyles from "./projects.module.scss"
 const Projects = () => {
   const projects = [
     {
+      Title: "Animal Shelter App",
+      Description:
+        "A mobile app that provides the user with pet information from their local animal shelter. Users can create an account for their local shelter and add animals to a public list. ",
+      Tech: ["React Native", "Redux", "ReactJS", "Firebase"],
+      Demo: "",
+      Repo: "https://github.com/nburbinski/animal_shelter_rn",
+      imgs: [],
+    },
+    {
       Title: "Plant Trackr",
       Description:
         "A solution to the impossible and relatable task of managing dozens of household plants, Plant Trackr allows you to keep track of all of your plants needs to stay happy and healthy. Login: Username: Demo User PW: Demo",
@@ -38,15 +47,6 @@ const Projects = () => {
       ],
       Demo: "https://ucfmovietime.herokuapp.com/",
       Repo: "https://github.com/nburbinski/ucf_movie_time",
-      imgs: [],
-    },
-    {
-      Title: "Animal Shelter App",
-      Description:
-        "A mobile app that provides the user with pet information from their local animal shelter",
-      Tech: ["React Native", "Redux", "ReactJS", "CSS"],
-      Demo: "",
-      Repo: "https://github.com/nburbinski/animal_shelter_rn",
       imgs: [],
     },
     {

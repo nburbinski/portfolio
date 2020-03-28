@@ -7,7 +7,9 @@ const ProjectCard = ({ project }) => {
     <>
       <div className={projectCardStyles.projectCard} id={project.Title}>
         <h1>{project.Title}</h1>
-        <div>{project.Description}</div>
+        <div className={projectCardStyles.description}>
+          {project.Description}
+        </div>
         <div className={projectCardStyles.techandlinks}>
           <h3> Tech Used </h3>
           <ul>
