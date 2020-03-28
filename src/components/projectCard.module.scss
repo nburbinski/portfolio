@@ -25,7 +25,7 @@ $color-primary: #00b9ae;
     background-color: lighten(#234099, 20%);
     font-size: 120%;
     position: relative;
-    left: 70%;
+    left: 75%;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 10%;
@@ -49,9 +49,6 @@ $color-primary: #00b9ae;
 }
 
 .techandlinks {
-  .links {
-    margin-right: -10%;
-  }
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -71,15 +68,15 @@ $color-primary: #00b9ae;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .projectCard {
     a {
-      left: 0%;
+      left: 65%;
     }
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 750px) {
   .techandlinks {
     ul {
       grid-template-columns: 1fr 1fr 1fr;
@@ -89,9 +86,14 @@ $color-primary: #00b9ae;
       text-align: center;
     }
   }
+  .projectCard {
+    a {
+      left: 0%;
+    }
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .projectCard {
     margin: 1rem 1rem;
   }

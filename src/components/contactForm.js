@@ -30,7 +30,7 @@ const ContactForm = () => {
     <form className={contactStyles.form} onSubmit={handleSubmit}>
       <h3>Contact Me</h3>
       <label>
-        Name
+        <p> Name </p>
         <input
           type="text"
           name="name"
@@ -40,7 +40,7 @@ const ContactForm = () => {
         ></input>
       </label>
       <label>
-        Email
+        <p>Email</p>
         <input
           type="email"
           name="email"
@@ -50,7 +50,7 @@ const ContactForm = () => {
         ></input>
       </label>
       <label>
-        Message
+        <p>Message</p>
         <textarea
           name="message"
           rows="5"
