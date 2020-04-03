@@ -85,9 +85,9 @@ const Projects = () => {
             <Link to="/#UCF Movie Night">UCF Movie Night</Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link to="/#Grocery Time">Grocery Time</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/#Portfolio">Portfolio</Link>
           </li>
