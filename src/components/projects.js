@@ -49,15 +49,15 @@ const Projects = () => {
       Repo: "https://github.com/nburbinski/ucf_movie_time",
       imgs: [],
     },
-    {
-      Title: "Grocery Time*",
-      Description:
-        "Picking groceries can be difficult, especially when trying to meal prep. Grocery Time is a web app compiles your groceries whether individually or by recipe and gives you nutritional data through the Spoonacular API",
-      Tech: ["PostgreSQL", "Express", "ReactJS", "NodeJS", "SASS", "Redux"],
-      Demo: "",
-      Repo: "https://github.com/nburbinski/grocerytime",
-      imgs: [],
-    },
+    // {
+    //   Title: "Grocery Time*",
+    //   Description:
+    //     "Picking groceries can be difficult, especially when trying to meal prep. Grocery Time is a web app compiles your groceries whether individually or by recipe and gives you nutritional data through the Spoonacular API",
+    //   Tech: ["PostgreSQL", "Express", "ReactJS", "NodeJS", "SASS", "Redux"],
+    //   Demo: "",
+    //   Repo: "https://github.com/nburbinski/grocerytime",
+    //   imgs: [],
+    // },
     {
       Title: "Portfolio",
       Description:
