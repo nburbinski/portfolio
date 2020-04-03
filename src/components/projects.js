@@ -11,7 +11,7 @@ const Projects = () => {
       Description:
         "A mobile app that provides the user with pet information from their local animal shelter. Users can create an account for their local shelter and add animals to a public list. ",
       Tech: ["React Native", "Redux", "ReactJS", "Firebase"],
-      Demo: "",
+      Demo: "https://expo.io/@nburbinski/animal_shelter",
       Repo: "https://github.com/nburbinski/animal_shelter_rn",
       imgs: [],
     },
@@ -50,7 +50,7 @@ const Projects = () => {
       imgs: [],
     },
     {
-      Title: "Grocery Time",
+      Title: "Grocery Time*",
       Description:
         "Picking groceries can be difficult, especially when trying to meal prep. Grocery Time is a web app compiles your groceries whether individually or by recipe and gives you nutritional data through the Spoonacular API",
       Tech: ["PostgreSQL", "Express", "ReactJS", "NodeJS", "SASS", "Redux"],
@@ -60,7 +60,8 @@ const Projects = () => {
     },
     {
       Title: "Portfolio",
-      Description: "Portfolio",
+      Description:
+        "A portfolio site to demonstrate my latest projects, as well as my resume, and a contact form.",
       Tech: ["ReactJS", "GatsbyJS", "SASS"],
       Demo: "",
       Repo: "https://github.com/nburbinski/portfolio",
