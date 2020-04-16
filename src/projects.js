@@ -43,9 +43,9 @@ export const projects = [
     imgs: [],
   },
   {
-    Title: "Artsy Fartsy",
+    Title: "Art Project",
     Description: "A site that provides random art located at NYC's MET",
-    Tech: ["ReactJS", "CSS"],
+    Tech: ["ReactJS", "CSS", "EmotionJS"],
     Demo: "https://laughing-meninsky-294e01.netlify.app/",
     Repo: "https://github.com/nburbinski/art-project",
     imgs: [],
